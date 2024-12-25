@@ -1,164 +1,112 @@
-/* Global Styles */
+/* styles.css */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Global styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Header Styles */
-header {
+/* Navigation bar styles */
+nav {
     background-color: #333;
     padding: 1rem;
-    color: white;
-}
-
-header .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-}
-
-nav {
-    margin-top: 1rem;
-}
-
-.nav-links {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    list-style: none;
-}
-
-.nav-links li {
-    display: inline-block;
-}
-
-.nav-links a {
+    justify-content: space-between;
+    align-items: center;
     color: white;
-    font-size: 1rem;
-    text-transform: uppercase;
-    padding: 0.5rem;
 }
 
-.nav-links a:hover {
-    background-color: #444;
+nav .nav-logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+/* Home Section */
+#home {
+    background-color: #ff6347;
+    padding: 5rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+#home h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+/* About Section */
+#about {
+    background-color: #f9f9f9;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+#about h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #333;
+    padding: 5rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+#contact h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-/* Main Section Styles */
-main {
-    padding: 3rem 2rem;
-    text-align: center;
-}
-
-main h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-main p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-button {
-    background-color: #333;
+#contact button {
+    padding: 0.75rem 1.5rem;
+    background-color: #ff6347;
     color: white;
-    padding: 1rem 2rem;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    border-radius: 5px;
-}
-
-button a {
-    color: white;
     font-size: 1rem;
 }
 
-button:hover {
-    background-color: #444;
+#contact button:hover {
+    background-color: #e55338;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
     background-color: #333;
-    color: white;
+    padding: 1rem;
     text-align: center;
-    padding: 1rem;
-}
-
-/* About, Services, and Contact Section */
-section h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-section p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0;
-    font-size: 1.1rem;
-}
-
-ul li {
-    margin: 0.5rem 0;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-top: 1rem;
-    font-weight: bold;
-}
-
-form input, form textarea {
-    padding: 1rem;
-    margin-top: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    margin-top: 1rem;
-    padding: 1rem;
-    background-color: #333;
     color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-form button:hover {
-    background-color: #444;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-    }
-
-    .nav-links li {
-        padding: 0.5rem;
-    }
 }
